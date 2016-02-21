@@ -86,7 +86,7 @@ module Bundler
       Bundler.settings[:shebang]  = options["shebang"] if options["shebang"]
       Bundler.settings[:jobs]     = options["jobs"] if options["jobs"]
       Bundler.settings[:no_prune] = false if options["prune"]
-      Bundler.settings[:no_install] = true if options["no-install"]
+      Bundler.settings[:no_install] = false if options["install"]
       Bundler.settings[:clean]    = options["clean"] if options["clean"]
       Bundler.settings.without    = options[:without]
       Bundler.settings.with       = options[:with]

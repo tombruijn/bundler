@@ -267,7 +267,7 @@ module Bundler
     method_option "cache-path", :type => :string, :banner =>
       "Specify a different cache path than the default (vendor/cache)."
     method_option "gemfile", :type => :string, :banner => "Use the specified gemfile instead of Gemfile"
-    method_option "no-install", :type => :boolean, :banner => "Don't actually install the gems, just package."
+    method_option "install", :type => :boolean, :banner => "Install the gems. Disable to only download packages.", :default => true
     method_option "prune", :type => :boolean, :banner => "Remove stale gems from the cache.", :default => true
     method_option "path", :type => :string, :banner =>
       "Specify a different path than the system default ($BUNDLE_PATH or $GEM_HOME). Bundler will remember this value for future installs on this machine"
